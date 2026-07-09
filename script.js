@@ -22,7 +22,7 @@ trialForm.addEventListener("submit", async (e) => {
 
     try {
         // Send data to server
-        const response = await fetch("/submit", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbwf1R_zp-mNpmlDEjRnqxcbs7MYpffLlhAZfBl3R4VD75foM3elR-aNycjo5JtrIlE5/exec", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
