@@ -8,13 +8,26 @@
 </head>
 
 <body>
-    <section class="hero">
+
+    <!-- NAVBAR (optional, works with auto-scroll) -->
+    <nav class="navbar">
+        <button onclick="scrollToSection('hero')">Home</button>
+        <button onclick="scrollToSection('rates')">Rates</button>
+        <button onclick="scrollToSection('trial')">Book Trial</button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
         <h1>Looking for some tutoring for your child?</h1>
-        <p>Hello! I am <strong>Madhav</strong>, a 7th grader studying in GEMS Modern Academy. 
-        I am looking to earn some money over the holidays, and am willing to help other students 
+        <p>Hello! I am <strong>Madhav</strong>, a 7th grader studying in GEMS Modern Academy.
+        I am looking to earn some money over the holidays, and am willing to help other students
         (6th grade and below) with Maths, English, Science, or just regular homework.</p>
+
+        <button class="cta" onclick="scrollToSection('trial')">Book a Trial Class</button>
     </section>
-    <section class="rates">
+
+    <!-- RATES SECTION -->
+    <section class="rates" id="rates">
         <h2>Rates</h2>
 
         <h3>Tutoring at Your Home</h3>
@@ -33,7 +46,7 @@
     </section>
 
     <!-- TRIAL CLASS FORM -->
-    <section class="trial">
+    <section class="trial" id="trial">
         <h2>Book a Trial Class (30 minutes)</h2>
 
         <form id="trialForm">
@@ -60,7 +73,7 @@
 
         <p class="contact-note">
             You will be contacted by <strong>0506990796</strong> or <strong>0556064808</strong>
-            on WhatsApp to confirm your trial class timing.
+            to confirm your trial class timing.
         </p>
     </section>
 
