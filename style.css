@@ -1,0 +1,156 @@
+/* GENERAL PAGE STYLING */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.navbar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navbar button:hover {
+    background: #0056b3;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background: #1e7e34;
+}
+
+/* RATES SECTION */
+.rates h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.rates h3 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.rates ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rates li {
+    background: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* TRIAL FORM */
+.trial h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button[type="submit"] {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* CONTACT NOTE */
+.contact-note {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
