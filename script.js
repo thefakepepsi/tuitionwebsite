@@ -1,11 +1,11 @@
-// Select the form
+
 const trialForm = document.getElementById("trialForm");
 
-// Listen for submit
+
 trialForm.addEventListener("submit", async (e) => {
     e.preventDefault(); // Prevent page reload
 
-    // Collect form data
+
     const formData = {
         parentName: trialForm.parentName.value.trim(),
         studentName: trialForm.studentName.value.trim(),
@@ -14,14 +14,14 @@ trialForm.addEventListener("submit", async (e) => {
         location: trialForm.location.value
     };
 
-    // Basic validation
+
     if (!formData.parentName || !formData.studentName || !formData.studentAge || !formData.studentSchool) {
         alert("Please fill out all fields.");
         return;
     }
 
     try {
-        // Send data to server
+
         const response = await fetch("https://script.google.com/macros/s/AKfycbwf1R_zp-mNpmlDEjRnqxcbs7MYpffLlhAZfBl3R4VD75foM3elR-aNycjo5JtrIlE5/exec", {
             method: "POST",
             headers: {
