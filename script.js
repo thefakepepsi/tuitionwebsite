@@ -34,4 +34,16 @@ trialForm.addEventListener("submit", async (e) => {
             alert("Trial class request submitted! You will be contacted soon.");
             trialForm.reset(); // Clear form
         } else {
-            alert("Something went
+            alert("Something went wrong. Please try again.");
+        }
+
+    } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("Server error. Please try again later.");
+    }
+});
+// Smooth auto-scroll function
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+}
